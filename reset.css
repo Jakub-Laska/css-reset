@@ -63,7 +63,6 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize; /* Optional: capitalizes first letter of each word in headings */
     font-family: 'Arial', sans-serif; /* Ensures headings have a strong sans-serif font */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow to make headings pop */
-    max-width: 65ch; /* Limits header width to 65 characters, ensuring better readability */
     word-wrap: break-word; /* Allows long words to break and wrap */
     overflow-wrap: break-word; /* Ensures text wraps in an acceptable way */
 }
@@ -75,6 +74,7 @@ figcaption {
   margin: 0; /* Removes default margin */
   word-wrap: break-word; /* Allows long words to break and wrap */
   overflow-wrap: break-word; /* Ensures text wraps in an acceptable way */
+  max-width: 65ch; /* Limits header width to 65 characters, ensuring better readability */
 }
 
 /* Images */
