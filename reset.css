@@ -1,1 +1,160 @@
+/* Universal Box-Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensures padding and borders are included in element's width/height */
+  margin: 0; /* Removes default margins */
+  padding: 0; /* Removes default padding to ensure consistency */
+  transition: all 200ms ease-in-out; /* Smooth transition for all properties */
+}
 
+/* Body Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Sets a default font for text */
+  line-height: 1.5; /* Improves readability by adjusting line height */
+  background-color: #121212; /* Dark background color */
+  color: #e0e0e0; /* Light gray text color for dark theme */
+  min-height: 100vh; /* Ensures body takes up at least the full viewport height */
+  user-select: none; /* Prevents text selection for cleaner interactions */
+  letter-spacing: .5px;
+}
+
+/* Removing list styles for unordered and ordered lists */
+ol, ul {
+  list-style: none; /* Removes default bullet points and numbers */
+  padding: 0; /* Removes default padding */
+}
+
+/* Links and buttons */
+a {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits color from the parent element */
+  transition: opacity 200ms ease-in-out; /* Adds smooth opacity transition */
+  text-transform: uppercase; /* Optional: transforms links to uppercase */
+  font-weight: bold; /* Makes links bold for better visibility */
+}
+
+a:visited {
+  color: #a0a0a0; /* Provides a color for visited links */
+}
+
+a:active {
+  opacity: 0.8; /* Reduces opacity when link is clicked */
+}
+
+button {
+  background-color: transparent; /* Removes default background */
+  border: none; /* Removes default border */
+  outline: none; /* Removes default outline on focus */
+  transition: transform 100ms ease-in-out, opacity 200ms ease-in-out; /* Adds smooth transitions for buttons */
+  font-weight: bold; /* Makes links bold for better visibility */
+}
+
+button:active {
+  transform: scale(0.98); /* Adds a small "click" effect on button press */
+  opacity: 0.9; /* Slight opacity change on active state */
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Removes default margin */
+    font-weight: bold; /* Ensures headings have bold font weight */
+    letter-spacing: -0.5px; /* Slightly tightened letter-spacing for headings */
+    text-transform: capitalize; /* Optional: capitalizes first letter of each word in headings */
+    font-family: 'Arial', sans-serif; /* Ensures headings have a strong sans-serif font */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow to make headings pop */
+    max-width: 65ch; /* Limits header width to 65 characters, ensuring better readability */
+    word-wrap: break-word; /* Allows long words to break and wrap */
+    overflow-wrap: break-word; /* Ensures text wraps in an acceptable way */
+}
+
+/* Paragraph, List Item, Figcaption Styles */
+p,
+li,
+figcaption {
+  margin: 0; /* Removes default margin */
+  word-wrap: break-word; /* Allows long words to break and wrap */
+  overflow-wrap: break-word; /* Ensures text wraps in an acceptable way */
+}
+
+/* Images */
+img {
+  display: block; /* Removes space below images */
+  max-width: 100%; /* Ensures images are responsive */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Form Elements */
+input,
+textarea,
+select,
+button {
+  font-family: inherit; /* Inherits font styles from parent element */
+  font-size: inherit; /* Inherits font size */
+  color: inherit; /* Inherits text color */
+  background: none; /* Removes background */
+  border: none; /* Removes borders */
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Ensures the table spans the full width */
+    border-collapse: collapse; /* Ensures borders between cells don't double */
+    margin: 20px 0; /* Adds space above and below the table */
+  }
+  
+  th, td {
+    padding: 12px; /* Adds space inside table cells */
+    text-align: left; /* Aligns text to the left */
+    border: 1px solid #444; /* Adds a border to the cells */
+  }
+  
+  th {
+    background-color: #333; /* Dark background for table headers */
+    color: #fff; /* White text for table headers */
+  }
+  
+  td {
+    background-color: #222; /* Slightly darker background for table rows */
+  }
+
+/* Input Placeholder Styling */
+input::placeholder,
+textarea::placeholder {
+  color: #a0a0a0; /* Light gray placeholder text */
+  opacity: 0.7; /* Slightly transparent placeholder */
+}
+
+/* Hover Effects */
+a:hover,
+button:hover,
+input:hover,
+textarea:hover,
+select:hover {
+  opacity: 0.8; /* Slightly reduces opacity on hover */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering */
+}
+
+/* Focus States for Accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #4CAF50; /* Adds green outline for better focus visibility */
+  outline-offset: 2px; /* Slightly offsets the outline for a cleaner look */
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px; /* Makes the scrollbar narrower */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Sets the scrollbar color */
+  border-radius: 4px; /* Rounds the edges of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darkens scrollbar thumb on hover */
+}
