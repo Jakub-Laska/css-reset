@@ -135,16 +135,6 @@ select:hover {
   cursor: pointer; /* Changes the cursor to a pointer when hovering */
 }
 
-/* Focus States for Accessibility */
-a:focus,
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid #4CAF50; /* Adds green outline for better focus visibility */
-  outline-offset: 2px; /* Slightly offsets the outline for a cleaner look */
-}
-
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px; /* Makes the scrollbar narrower */
