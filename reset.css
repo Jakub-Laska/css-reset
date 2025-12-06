@@ -5,7 +5,6 @@
   box-sizing: border-box; /* Ensures padding and borders are included in element's width/height */
   margin: 0; /* Removes default margins */
   padding: 0; /* Removes default padding to ensure consistency */
-  transition: all 200ms ease-in-out; /* Smooth transition for all properties */
 }
 
 /* Body Styling */
@@ -141,7 +140,7 @@ button:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid #4CAF50; /* Adds green outline for better focus visibility */
+  outline: 2px solid #ffffff80; /* Adds white outline for better focus visibility */
   outline-offset: 2px; /* Slightly offsets the outline for a cleaner look */
 }
 
