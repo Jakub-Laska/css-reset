@@ -73,7 +73,6 @@ figcaption {
   margin: 0; /* Removes default margin */
   word-wrap: break-word; /* Allows long words to break and wrap */
   overflow-wrap: break-word; /* Ensures text wraps in an acceptable way */
-  max-width: 65ch; /* Limits header width to 65 characters, ensuring better readability */
 }
 
 /* Images */
